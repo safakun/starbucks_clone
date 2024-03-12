@@ -34,7 +34,7 @@ p {
 .navbar {
     width: 100%;
     height: auto;
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 20px;
     box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
     0 0 2px rgb(0 0 0 / 7%);
@@ -89,6 +89,12 @@ p {
     align-items: center;
 }
 
+.navbar-nav-right li:nth-child(2) {
+    margin: 0 6px;
+}
+
+/* Box */
+
 
 /* Utility classes */
 
@@ -110,7 +116,107 @@ p {
     color: #000;
 }
 
+.btn-dark-outline:hover {
+    background-color: rgba(0,0,0,0.06);
+}
+
+.btn-light-outline {
+    border-color: #fff;
+    color: #000;
+}
+
 .btn-dark {
     background-color: #000;
     color: #fff;
+}
+
+.btn-dark:hover {
+    background-color: #333;
+}
+
+/* Background classes */
+.bg-primary {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+.bg-extra {
+    background-color: var(--color-extra);
+    color: #000;
+}
+
+/* .bg-dark {
+    background-color: var(--color-dark);
+    color: #000;
+} */
+
+/* Text styling */
+.text-center {
+    text-align: center;
+}
+
+.text-xl {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.text-lg {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.text-md {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.text-sm {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/* padding */
+.py-sm {
+    padding: 10px 0;
+}
+
+.py-md {
+    padding: 20px 0;
+}
+
+.py-lg {
+    padding: 40px 0;
+}
+
+
+/* Media queries */
+@media(max-width: 960px) {
+    .text-xl {
+        font-size: 30px;
+    }
+
+    .text-lg {
+        font-size: 45px;
+    }
+
+    .text-md {
+        font-size: 19px;
+    }
+}
+
+@media(min-width: 1440px) {
+    .box {
+        max-width: 1440px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
